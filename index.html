@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>BookSite</title>
+  
+  <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Gloria+Hallelujah|Julius+Sans+One|Alegreya+Sans+SC" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="books.js"></script>
+</head>
+<body>
+<img src="header.png" class="header">
+
+ <div class="section">
+ <p class="text">Add a book to your very own library here! </p>
+  <input type="text" class="input" id="inputTitle" placeholder="TITLE">
+  <input type="text" class="input" id="inputAuthor" placeholder="AUTHOR">
+<p class="statusAdd"></p>
+   <button id="btnAddBook"> ADD BOOK </button>
+   </div>
+   
+  <div class="section">
+  <p class="text">Here you can get your very own API-key! </p>
+	<p id="apiReceaved"> </p>
+  <button id="btn"> GET API KEY </button>
+  </div>
+  
+  <div class="section">
+  <button id="btnViewBooks">SHOW MY LIBRARY</button>
+ 
+  <ul id="bookList">
+  </ul>
+ </div>
+ 
+  <div class="section">
+  <p class="text">Delete a book if you no longer want it in your library!</p>
+<input type="text" class="input" id="deleteID" placeholder="ID">
+<p class="statusDelete"></p>
+<button id="deleteButton">Delete Book</button> 
+
+ </div>
+
+ <div class="section">
+ <p class="text">Status: </p>
+ <p id="statusRad"></p>
+ </div>
+  
+</body>
+</html>
